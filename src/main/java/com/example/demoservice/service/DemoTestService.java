@@ -47,6 +47,7 @@ public class DemoTestService {
 	public String updateList(int id, String text) {
 		/*list.remove(id);
 		list.add(id, text);*/
+		logger.info(id+" "+text);
 		list.set(id, text);
 		return "list updated successfully";
 	}
